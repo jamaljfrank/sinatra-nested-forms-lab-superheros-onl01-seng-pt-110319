@@ -1,14 +1,16 @@
-<h1>Heroes Unite!</h1>
-<h2>Team</h2>
-<h4>Name: <%= @team.name %> </h4><br>
-<h4>Motto: <%= @team.motto %></h4><br>
+<h1><%=@team.name%></h1>
 
+<h2>Team Motto: <%=@team.motto%></h2>
 
-<h2>Members<h2><br>
-<% @heroes.each do |hero| %>
-<h4>Hero's Name: <%= hero.name %> </h4><br>
-<h4>Hero's Power: <%= hero.power %></h4><br>
-<h4>Hero's Biography: <%= hero.biography %></h4>
-<% end %>
+<h2>Hero Name: <%=@heroes[0].name%> </h2>
+<p>Hero Power: <%=@heroes[0].power%></p>
+<p>Hero Biography: <%=@heroes[0].biography%></p>
 
+<h2>Hero Name: <%=@heroes[1].name%></h2>
+<p>Hero Power: <%=@heroes[1].power%></p>
+<p>Hero Biography: <%=@heroes[1].biography%></p>
+
+<h2>Hero Name: <%=@heroes[2].name%></h2>
+<p>Hero Power: <%=@heroes[2].power%></p>
+<p>Hero Biography: <%=@heroes[2].biography%></p>
 
